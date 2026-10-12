@@ -28,11 +28,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             ExemploSimplesDeComposeTheme {
                 val navController: NavHostController = rememberNavController()
-                NavHost(navController = navController, startDestination = "welcome") {
+                NavHost(navController = navController, startDestination = "mainalcgas") {
                     composable("welcome") { Welcome(navController) }
                     composable("input") { InputView(navController) }
                     composable("mainalcgas") { AlcoolGasolinaPreco(navController) }
+                    //composable("lista/nomeDoPosto"){ListaDePostos(navController, nomeDoPosto = "Posto Exemplo")}
+                    composable("lista/{nomeDoPosto}") { backStackEntry ->
 
+                        val nomePassado = backStackEntry.arguments?.getString("nomeDoPosto") ?: "Posto Desconhecido"
+
+                        ListaDePostos(navController = navController, nomeDoPosto = nomePassado)
+                    }
                 }
             }
         }

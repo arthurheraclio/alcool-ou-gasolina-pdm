@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SimpleComposeExample</string>
+
+
+    <string name="label_alcool">Ethanol Price</string>
+    <string name="label_gasolina">Gas Price</string>
+    <string name="label_nome_posto">Gas Station Name (Optional)</string>
+    <string name="btn_calcular">Save Gas Station</string>
+    <string name="compensa_alcool">Ethanol is better</string>
+    <string name="compensa_gasolina">Gas is better</string>
+    <string name="inserir_posto">Insert Station</string>
+
+
+    <string name="titulo_lista">Gas Stations List</string>
+    <string name="alcool">Ethanol</string>
+    <string name="gasolina">Gas</string>
+    <string name="data">Date</string>
+    <string name="gps">GPS</string>
+    <string name="ver_mapa">View on Map</string>
+    <string name="editar">Edit</string>
+    <string name="excluir">Delete</string>
+</resources>

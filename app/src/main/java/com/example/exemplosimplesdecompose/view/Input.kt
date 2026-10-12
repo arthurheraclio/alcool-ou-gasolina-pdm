@@ -41,6 +41,7 @@ fun InputView(navController: NavHostController) { //Recebe o elemento que permit
         Button(
             onClick = {
                 // Rota?
+                navController.navigate("mainalcgas")
             }
         ) {
             Text("Ir para a próxima tela")

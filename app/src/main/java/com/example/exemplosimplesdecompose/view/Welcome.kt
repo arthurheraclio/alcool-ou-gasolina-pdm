@@ -27,7 +27,7 @@ import androidx.navigation.NavHostController
 import com.example.exemplosimplesdecompose.R
 
 @Composable
-fun Welcome(navController: NavHostController) { //Recebe o elemento que permite realizar a navegação
+fun Welcome(navController: NavHostController) {
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -36,7 +36,7 @@ fun Welcome(navController: NavHostController) { //Recebe o elemento que permite 
         Text(text = "Bem-vindos ao Navigation Example!")
         Spacer(modifier = Modifier.height(16.dp))
         Image(
-            painter = painterResource(id = R.drawable.welcome), // Substituir pelo seu recurso
+            painter = painterResource(id = R.drawable.welcome),
             contentDescription = "Imagem de boas-vindas",
             modifier = Modifier
                 .size(128.dp)
